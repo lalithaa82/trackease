@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackEase - Parcel Tracking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TrackEase</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#tracking">Track Parcel</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Online Parcel Tracking System</h2>
+        <p>Track your parcel quickly and easily.</p>
+        <a href="#tracking" class="btn">Track Your Parcel</a>
+    </section>
+
+    <section id="tracking" class="tracking">
+        <h2>Track Your Parcel</h2>
+        <p>Enter your tracking ID</p>
+        <div class="track-box">
+            <input type="text" id="trackingId" placeholder="Example: TE12345">
+            <button onclick="trackParcel()">Track</button>
+        </div>
+        <div id="result"></div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About TrackEase</h2>
+        <p>TrackEase is a simple parcel tracking system that displays parcel details, delivery status and tracking history.</p>
+    </section>
+
+    <footer>
+        <p>© 2026 TrackEase | Online Parcel Tracking System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

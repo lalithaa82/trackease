@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 { font-size: 28px; }
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: #dbeafe;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    padding: 14px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.tracking {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.tracking h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.track-box {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.track-box input {
+    width: 280px;
+    padding: 14px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.track-box button {
+    padding: 14px 25px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#result {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.result-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccc;
+    text-align: left;
+}
+
+.result-card h3 {
+    color: #2563eb;
+    margin-bottom: 15px;
+}
+
+.result-card p { margin: 10px 0; }
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+.about {
+    text-align: center;
+    padding: 60px 20px;
+    background: white;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    background: #172554;
+    color: white;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hero h2 { font-size: 30px; }
+
+    .track-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .track-box input { width: 90%; }
+}
