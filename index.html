@@ -1,46 +1,461 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TrackEase - Parcel Tracking</title>
+
+    <title>TrackEase | Online Parcel Tracking</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>TrackEase</h1>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">📦</div>
+
+            <div>
+                <h2>TrackEase</h2>
+                <span>Online Parcel Tracking System</span>
+            </div>
+        </div>
+
         <nav>
             <a href="#home">Home</a>
             <a href="#tracking">Track Parcel</a>
+            <a href="#how">How It Works</a>
             <a href="#about">About</a>
         </nav>
+
     </header>
 
+
+    <!-- Home Section -->
     <section id="home" class="hero">
-        <h2>Online Parcel Tracking System</h2>
-        <p>track your parcel anytime, anywhere.</p>
-        <a href="#tracking" class="btn">Track Your Parcel</a>
-    </section>
 
-    <section id="tracking" class="tracking">
-        <h2>Track Your Parcel</h2>
-        <p>Enter your tracking ID</p>
-        <div class="track-box">
-            <input type="text" id="trackingId" placeholder="Example: TE12345">
-            <button onclick="trackParcel()">Track</button>
+        <div class="hero-content">
+
+            <span class="tag">
+                SIMPLE • FAST • EASY
+            </span>
+
+            <h1>
+                Track Your Parcel.
+                <span>Stay Informed.</span>
+            </h1>
+
+            <p>
+                TrackEase is a simple online parcel tracking system
+                that helps users check parcel details, delivery status
+                and tracking history using a tracking ID.
+            </p>
+
+            <a href="#tracking" class="main-btn">
+                Track Your Parcel →
+            </a>
+
         </div>
+
+
+        <!-- Parcel Preview -->
+        <div class="parcel-preview">
+
+            <div class="preview-top">
+
+                <span>TRACKING ID</span>
+
+                <strong>TE12345</strong>
+
+            </div>
+
+            <div class="package-icon">
+                📦
+            </div>
+
+            <h3>Parcel Tracking</h3>
+
+            <p>
+                Hyderabad → Vijayawada
+            </p>
+
+            <div class="progress">
+
+                <div class="progress-fill"></div>
+
+            </div>
+
+            <div class="progress-text">
+
+                <span>Dispatched</span>
+
+                <span>Out for Delivery</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking-section">
+
+        <div class="section-title">
+
+            <span>TRACK YOUR PARCEL</span>
+
+            <h2>Where is your parcel?</h2>
+
+            <p>
+                Enter your tracking ID to view your parcel information.
+            </p>
+
+        </div>
+
+
+        <div class="tracking-box">
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="trackingId"
+                    placeholder="Enter tracking ID e.g. TE12345"
+                >
+
+                <button onclick="trackParcel()">
+                    Track Parcel
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Tracking Result -->
         <div id="result"></div>
+
     </section>
 
-    <section id="about" class="about">
-        <h2>About TrackEase</h2>
-        <p>TrackEase is a simple parcel tracking system that displays parcel details, delivery status and tracking history.</p>
+
+    <!-- How To Use TrackEase -->
+    <section id="how" class="how-section">
+
+        <div class="section-title">
+
+            <span>HOW TO USE TRACKEASE</span>
+
+            <h2>Track your parcel in 4 simple steps</h2>
+
+            <p>
+                Follow these simple steps to check your parcel information.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+
+            <!-- Step 1 -->
+            <div class="step-card">
+
+                <div class="step-number">
+                    01
+                </div>
+
+                <div class="step-icon">
+                    🔑
+                </div>
+
+                <h3>
+                    Enter Tracking ID
+                </h3>
+
+                <p>
+                    Enter the unique tracking ID of your parcel
+                    in the tracking box.
+                </p>
+
+                <div class="example">
+
+                    <strong>Example:</strong>
+
+                    <span>TE12345</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 2 -->
+            <div class="step-card">
+
+                <div class="step-number">
+                    02
+                </div>
+
+                <div class="step-icon">
+                    🔍
+                </div>
+
+                <h3>
+                    Click Track Parcel
+                </h3>
+
+                <p>
+                    After entering the tracking ID, click the
+                    Track Parcel button to search for the parcel.
+                </p>
+
+                <div class="example">
+
+                    <strong>Example:</strong>
+
+                    <span>TE12345 → Track</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 3 -->
+            <div class="step-card">
+
+                <div class="step-number">
+                    03
+                </div>
+
+                <div class="step-icon">
+                    📋
+                </div>
+
+                <h3>
+                    View Parcel Details
+                </h3>
+
+                <p>
+                    TrackEase displays the sender, receiver,
+                    expected delivery date and current status.
+                </p>
+
+                <div class="example">
+
+                    <strong>Example:</strong>
+
+                    <span>Hyderabad → Vijayawada</span>
+
+                    <small>Status: Out for Delivery</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Step 4 -->
+            <div class="step-card">
+
+                <div class="step-number">
+                    04
+                </div>
+
+                <div class="step-icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Check Tracking History
+                </h3>
+
+                <p>
+                    View the different stages completed by
+                    the parcel from booking to delivery.
+                </p>
+
+                <div class="example history-example">
+
+                    <strong>Example:</strong>
+
+                    <span>✓ Parcel Booked</span>
+
+                    <span>✓ Parcel Dispatched</span>
+
+                    <span>🚚 Out for Delivery</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
     </section>
 
+
+    <!-- Features Section -->
+    <section class="features-section">
+
+        <div class="section-title">
+
+            <span>FEATURES</span>
+
+            <h2>What TrackEase provides</h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Parcel Status
+                </h3>
+
+                <p>
+                    Check the current status of the parcel
+                    clearly and easily.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    🚚
+                </div>
+
+                <h3>
+                    Delivery Information
+                </h3>
+
+                <p>
+                    View sender, receiver and expected
+                    delivery information.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    📋
+                </div>
+
+                <h3>
+                    Tracking History
+                </h3>
+
+                <p>
+                    View the different stages of parcel
+                    movement.
+                </p>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon">
+                    ⚡
+                </div>
+
+                <h3>
+                    Easy Tracking
+                </h3>
+
+                <p>
+                    Enter a tracking ID and quickly
+                    view the available parcel details.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+
+        <div class="about-content">
+
+            <span>
+                ABOUT TRACKEASE
+            </span>
+
+            <h2>
+                A simple approach to parcel tracking
+            </h2>
+
+            <p>
+                TrackEase is an online parcel tracking system
+                developed using HTML, CSS and JavaScript.
+                It provides a simple interface where users can
+                enter a tracking ID and view predefined parcel
+                information.
+            </p>
+
+            <p>
+                The project also demonstrates the use of Git
+                for managing project files, recording changes,
+                creating branches, merging updates and
+                maintaining different versions of the project.
+            </p>
+
+
+            <div class="tech-list">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+                <span>Git</span>
+
+                <span>GitHub</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
     <footer>
-        <p>© 2026 TrackEase | Online Parcel Tracking System</p>
+
+        <div class="footer-logo">
+            📦 TrackEase
+        </div>
+
+        <p>
+            Online Parcel Tracking System Using Git
+        </p>
+
+        <small>
+            © 2026 TrackEase | Academic Project
+        </small>
+
     </footer>
 
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
